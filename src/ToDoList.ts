@@ -42,26 +42,27 @@ export class ToDoList {
 
     }
 
-    private criaLinhaTarefa(tarefa : Tarefa): HTMLTableRowElement {
+    private criaLinhaTarefa(tarefa: Tarefa): HTMLTableRowElement {
         //Criando Linha
         let linha = document.createElement("tr");
 
-        tarefa.concluido?linha.className = "done" : linha.className = "";
+        tarefa.concluido ? linha.className = "done" : linha.className = "";
 
         //Criando Célula do CheckBox
         let tdCheckBox = document.createElement("td");
         let Checkbox = document.createElement("input");
         Checkbox.type = "checkbox";
         Checkbox.checked = tarefa.concluido;
+        //Adicionando Evento ao checkbox
         Checkbox.addEventListener("click", evento => {
             tarefa.concluido = !tarefa.concluido;
-            tarefa.concluido?linha.className = "done" : linha.className = "";
+            tarefa.concluido ? linha.className = "done" : linha.className = "";
         });
 
         tdCheckBox.appendChild(Checkbox);
 
         // Criando descrição da tarefa
-       
+
         let tdDescricaoTarefa = document.createElement("td");
         tdDescricaoTarefa.textContent = tarefa.descricao;
 
@@ -87,7 +88,7 @@ export class ToDoList {
         return linha;
     }
 
-    private 
+    private
 
 }
 
