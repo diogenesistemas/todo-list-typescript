@@ -56,7 +56,7 @@ export class ToDoList {
 
         // Criando descrição da tarefa
         let tdDescricaoTarefa = document.createElement("td");
-        tdDescricaoTarefa.textContent = "Minha tarefa Padrao";
+        tdDescricaoTarefa.textContent = tarefa.descricao;
 
 
         // Criando botão remover
@@ -68,7 +68,7 @@ export class ToDoList {
 
 
         let tdPrioridade = document.createElement("td");
-        tdPrioridade.innerHTML = `[${Prioridade[1]}]`;
+        tdPrioridade.innerHTML = `[${Prioridade[tarefa.prioridade]}]`;
 
 
 
