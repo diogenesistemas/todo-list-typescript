@@ -66,7 +66,7 @@ export class ToDoList {
         btRemover.innerHTML = "delete";
         tdBotaoRemover.appendChild(btRemover);
 
-
+        // Criando lable prioridade
         let tdPrioridade = document.createElement("td");
         tdPrioridade.innerHTML = `[${Prioridade[tarefa.prioridade]}]`;
 
