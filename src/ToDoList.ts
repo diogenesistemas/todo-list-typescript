@@ -56,18 +56,26 @@ export class ToDoList {
         let tdDescricaoTarefa = document.createElement("td");
         tdDescricaoTarefa.textContent = "Minha tarefa Padrao";
 
+
+        // Criando botão remover
         let tdBotaoRemover = document.createElement("td");
         let btRemover = document.createElement("i");
         btRemover.className = "material-icons";
         btRemover.innerHTML = "delete";
         tdBotaoRemover.appendChild(btRemover);
-       
-        
+
+
+        let tdPrioridade = document.createElement("td");
+        tdPrioridade.innerHTML = `[${Prioridade[1]}]`;
+
+
+
 
 
         //Adicionando Elementos a linha
         linha.appendChild(tdCheckBox);
         linha.appendChild(tdDescricaoTarefa);
+        linha.appendChild(tdPrioridade);
         linha.appendChild(tdBotaoRemover);
         console.log(linha);
         return linha;
