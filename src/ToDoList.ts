@@ -72,6 +72,9 @@ export class ToDoList {
         let btRemover = document.createElement("i");
         btRemover.className = "material-icons";
         btRemover.innerHTML = "delete";
+        btRemover.addEventListener("click", evento =>{
+            // this.lista.removeTarefa(tarefa);
+        });
         tdBotaoRemover.appendChild(btRemover);
 
         // Criando lable prioridade
@@ -88,7 +91,6 @@ export class ToDoList {
         return linha;
     }
 
-    private
 
 }
 
