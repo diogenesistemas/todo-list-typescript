@@ -35,5 +35,5 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist'),
 	},
 	//Para ativar o webpack para compilar automático
-	watch: true;
+	watch: true,
 };
