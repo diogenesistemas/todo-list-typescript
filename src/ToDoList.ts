@@ -51,11 +51,24 @@ export class ToDoList {
         let Checkbox = document.createElement("input");
         Checkbox.type = "checkbox";
         tdCheckBox.appendChild(Checkbox);
+
+        // Criando descrição da tarefa
+        let tdDescricaoTarefa = document.createElement("td");
+        tdDescricaoTarefa.textContent = "Minha tarefa Padrao";
+
+        let tdBotaoRemover = document.createElement("td");
+        let btRemover = document.createElement("i");
+        btRemover.className = "material-icons";
+        btRemover.innerHTML = "delete";
+        tdBotaoRemover.appendChild(btRemover);
+       
         
 
 
         //Adicionando Elementos a linha
         linha.appendChild(tdCheckBox);
+        linha.appendChild(tdDescricaoTarefa);
+        linha.appendChild(tdBotaoRemover);
         console.log(linha);
         return linha;
     }
