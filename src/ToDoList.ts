@@ -36,13 +36,13 @@ export class ToDoList {
     private renderizar() {
         let corpoTabela = document.createElement('tbody');
         this.lista.tarefas.forEach(tarefa => {
-            corpoTabela.appendChild(this.criaLinhaTarefa());
+            corpoTabela.appendChild(this.criaLinhaTarefa(tarefa));
         });
         this.table.replaceChild(corpoTabela, this.table.firstElementChild);
 
     }
 
-    private criaLinhaTarefa(): HTMLTableRowElement {
+    private criaLinhaTarefa(tarefa : Tarefa): HTMLTableRowElement {
         //Criando Linha
         let linha = document.createElement("tr");
         // linha.className = "done";

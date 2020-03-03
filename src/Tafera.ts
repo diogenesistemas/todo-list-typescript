@@ -2,7 +2,7 @@ import { Prioridade } from './Prioridade';
 
 export class Tarefa {
     constructor(
-        private _descricao: String,
+        private _descricao: string,
         private _prioridade: Prioridade,
         private _concluido: boolean = false) { }
 
@@ -12,5 +12,13 @@ export class Tarefa {
 
     public get concluido(): boolean {
         return this._concluido;
+    }
+
+    public get descricao(): string{
+        return this._descricao;
+    }
+
+    public get prioridade(): Prioridade{
+        return this._prioridade;
     }
 }
