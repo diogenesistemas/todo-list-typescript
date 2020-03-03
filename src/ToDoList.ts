@@ -46,7 +46,16 @@ export class ToDoList {
         //Criando Linha
         let linha = document.createElement("tr");
 
+        //Criando Célula do CheckBox
+        let tdCheckBox = document.createElement("td");
+        let Checkbox = document.createElement("input");
+        Checkbox.type = "checkbox";
+        tdCheckBox.appendChild(Checkbox);
         
+
+
+        //Adicionando Elementos a linha
+        linha.appendChild(tdCheckBox);
         console.log(linha);
         return linha;
     }
