@@ -45,11 +45,13 @@ export class ToDoList {
     private criaLinhaTarefa(): HTMLTableRowElement {
         //Criando Linha
         let linha = document.createElement("tr");
+        // linha.className = "done";
 
         //Criando Célula do CheckBox
         let tdCheckBox = document.createElement("td");
         let Checkbox = document.createElement("input");
         Checkbox.type = "checkbox";
+        // Checkbox.checked = true;
         tdCheckBox.appendChild(Checkbox);
 
         // Criando descrição da tarefa
